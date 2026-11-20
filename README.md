@@ -1,4 +1,4 @@
-#Rainwater Harvesting Potential Calculator for Households
+Rainwater Harvesting Potential Calculator for Households
 
 Project Overview
 
