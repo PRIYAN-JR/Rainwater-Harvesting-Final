@@ -1,0 +1,13 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "java.debug.settings.onBuildFailureProceed": true,
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-25",
+            "path": "C:\\Users\\ELCOT\\.jdk\\25\\jdk-25.0.2",
+            "default": true
+        }
+    ],
+    "java.jdt.ls.java.home": "C:\\Users\\ELCOT\\.jdk\\25\\jdk-25.0.2"
+}

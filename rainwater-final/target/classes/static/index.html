@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RAINWATER HARVESTING CALCULATOR</title><link rel="stylesheet" href="/styles.css"></head>
+<body><main class="page">
+<header class="hero"><div class="hero-copy"><h1>RAINWATER HARVESTING CALCULATOR</h1>
+<p class="intro">Estimate how much rainwater your roof can collect and compare it with your household’s water needs.</p></div>
+<div class="hero-illustration"><svg viewBox="0 0 420 190" role="img" aria-label="Rain falling on a roof and flowing into a water storage tank">
+<circle cx="345" cy="36" r="22" fill="#f6d77b"/><path d="M30 84 150 18 270 84" fill="#1e477b" stroke="#173c6a" stroke-width="5" stroke-linejoin="round"/>
+<path d="M52 83v68h194V83" fill="#e8f4f2" stroke="#173c6a" stroke-width="4"/><rect x="75" y="101" width="53" height="50" fill="#c4e4e6"/><rect x="151" y="101" width="53" height="50" fill="#c4e4e6"/>
+<path d="M246 81h22v43h42" fill="none" stroke="#258a9b" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="300" y="119" width="83" height="53" rx="8" fill="#b7e0e7" stroke="#258a9b" stroke-width="4"/><path d="M305 145q15-7 30 0t45 0v18h-75z" fill="#4aa9bd"/>
+<g stroke="#4aa9bd" stroke-width="5" stroke-linecap="round"><path d="m95 12-8 15"/><path d="m126 1-8 15"/><path d="m226 9-8 15"/><path d="m286 43-8 15"/><path d="m315 65-8 15"/></g>
+<path d="M15 174q50-8 100 0t100 0t100 0t90 0" fill="none" stroke="#9bc9c7" stroke-width="4" stroke-linecap="round"/></svg></div></header>
+<section class="workspace">
+<section class="results-panel" aria-live="polite"><div class="result-top"><div><h2>Harvest potential</h2></div><span id="resultBadge" class="status-badge hidden"></span></div>
+<div id="emptyState" class="empty-state"><div class="empty-icon">↘</div><h3>Your results will appear here</h3><p>Enter your details and select <strong>Calculate potential</strong>.</p></div>
+<div id="results" class="hidden"><div class="primary-result"><p id="harvestLabel">Estimated annual rainwater</p><div id="harvestValue" class="big-number">0</div><span id="harvestUnit">litres per year</span></div>
+<div class="metric-grid">
+<article class="metric"><span id="averageLabel">Monthly average</span><strong id="averageValue">0</strong><small id="averageUnit">litres/month</small></article>
+<article class="metric"><span id="demandLabel">Annual household demand</span><strong id="demandValue">0</strong><small id="demandUnit">litres/year</small></article>
+<article class="metric"><span id="balanceLabel">Potential surplus</span><strong id="balanceValue">0</strong><small id="balanceUnit">litres/year</small></article>
+<article class="metric"><span id="otherLabel">Water shortage</span><strong id="otherValue">0</strong><small id="otherUnit">litres/year</small></article></div>
+<p id="resultMessage" class="result-message"></p><p id="roofNote" class="roof-note"></p></div></section>
+<section class="form-panel">
+<h2>Enter your details</h2><form id="calculatorForm">
+<label for="roofArea">Roof area (m²)</label><input id="roofArea" type="number" min="0.1" step="any" value="100" placeholder="e.g. 100" required>
+<label for="period">Rainfall period</label><select id="period"><option value="annual">Annual rainfall</option><option value="monthly">Monthly rainfall</option></select>
+<div id="monthGroup" class="hidden"><label for="month">Month</label><select id="month"><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select></div>
+<label id="rainfallLabel" for="rainfall">Annual rainfall (mm)</label><input id="rainfall" type="number" min="0" step="any" value="700" placeholder="" required>
+<label for="roofType">Roof type</label><select id="roofType"><option value="concrete">Concrete (0.80)</option><option value="tile">Tile (0.75)</option><option value="metal">Metal sheet (0.90)</option><option value="cement-sheet">Cement sheet (0.85)</option></select>
+<label for="familyMembers">Family members</label><input id="familyMembers" type="number" min="1" step="1" value="4" required>
+<label for="dailyNeed">Daily water need per person (L)</label><input id="dailyNeed" type="number" min="0" step="any" value="23" required>
+<button type="submit" id="calculateButton">Calculate potential</button>
+<p id="errorMessage" class="error hidden"></p>
+</form></section></section></main><script src="/script.js"></script></body></html>

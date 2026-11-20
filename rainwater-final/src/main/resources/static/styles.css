@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+:root{--navy:#173d70;--ink:#233b52;--blue:#1769d2;--cream:#fffdf7;--teal:#258a9b}
+*{box-sizing:border-box}body{margin:0;background:#eaf5f5;color:var(--ink);font-family:'DM Sans',Arial,sans-serif}
+.page{max-width:1240px;margin:0 auto;padding:54px 34px 64px}.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.55fr);gap:30px;align-items:center;margin-bottom:0}.eyebrow{color:#1c4d86;font-size:12px;font-weight:700;letter-spacing:2px}
+h1{color:#123d77;font-size:clamp(30px,4vw,49px);line-height:1.12;letter-spacing:-1.4px;margin:14px 0 13px}.intro{max-width:760px;color:#627889;font-size:17px;line-height:1.7;margin:0}
+.hero-illustration{min-height:150px;display:flex;align-items:center;justify-content:center;background:#edf7f5;border:1px solid #d8e9e8;border-radius:16px;overflow:hidden}.hero-illustration svg{width:100%;max-width:390px;height:100%}
+.workspace{display:grid;grid-template-columns:minmax(360px,.95fr) minmax(0,1.05fr);gap:26px;align-items:start}.form-panel{order:1}.results-panel{order:2}
+.results-panel,.form-panel{min-width:0;border:1px solid #e0e9e9;border-radius:22px;padding:28px;box-shadow:0 12px 35px #1e475b0f}
+.results-panel{background:#ffffffdb;min-height:480px}.form-panel{background:var(--cream)}
+.result-top{display:flex;align-items:center;justify-content:space-between;gap:12px}h2{color:#173f76;font-size:24px;margin:8px 0 22px;letter-spacing:-.4px}
+.status-badge{flex-shrink:0;background:#e4f5eb;color:#176c48;border-radius:999px;padding:9px 13px;font-size:12px;font-weight:700}.status-badge.shortage{background:#fff0e8;color:#9c4b1f}
+.primary-result{padding:25px;background:linear-gradient(125deg,#e3f3f5,#eef7f7);border-radius:17px;margin-bottom:18px}.primary-result p{margin:0 0 12px;color:#536e80;font-size:16px}
+.big-number{color:#173e70;font-size:clamp(36px,4vw,49px);line-height:1.1;font-weight:700;letter-spacing:-1px;overflow-wrap:anywhere}.primary-result span{display:inline-block;margin-top:8px;color:#627889;font-size:14px}
+.metric-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 20px}.metric{padding:20px 4px;border-bottom:1px solid #e9eff0;display:flex;flex-direction:column;gap:7px;min-width:0}
+.metric span{color:#758795;font-size:13px}.metric strong{color:#1d4778;font-size:25px;overflow-wrap:anywhere}.metric small{color:#82919b;font-size:12px}
+.result-message{line-height:1.6;font-size:14px;color:#4f6878;margin:20px 0 0}.roof-note{color:#82919b;font-size:12px;margin:13px 0 0}
+.empty-state{display:flex;flex-direction:column;justify-content:center;min-height:350px;padding:20px 8px}.empty-icon{display:grid;place-items:center;width:76px;height:76px;border-radius:18px;background:#e7f5f5;color:#258a9b;font-size:40px;margin-bottom:18px}
+.empty-state h3{color:#1b477d;font-size:23px;margin:0 0 9px}.empty-state p{color:#82919b;font-size:14px;line-height:1.6;margin:0}
+.form-panel h2{margin-bottom:20px}form{display:flex;flex-direction:column}label{color:#243f59;font-size:14px;font-weight:700;margin:0 0 8px}
+input,select{width:100%;min-height:49px;padding:12px 14px;border:1px solid #d7e1e3;border-radius:10px;background:white;color:#263e52;font:inherit;font-size:15px;margin-bottom:18px;outline:none}
+input:focus,select:focus{border-color:#4b94c5;box-shadow:0 0 0 3px #4b94c521}button{border:0;border-radius:11px;min-height:52px;padding:14px 18px;background:#1769d2;color:white;font:inherit;font-weight:700;cursor:pointer;margin-top:3px}
+button:hover{background:#1058b8}button:disabled{opacity:.7;cursor:wait}.disclaimer{color:#778994;font-size:12px;line-height:1.6;margin:15px 0 0}.error{color:#a33b2c;background:#fff0ed;border-radius:8px;padding:10px 12px;font-size:13px;line-height:1.5;margin:12px 0 0}.hidden{display:none!important}
+@media(max-width:850px){.page{padding:34px 18px 45px}.hero{grid-template-columns:1fr;gap:20px}.hero-illustration{min-height:130px}.workspace{grid-template-columns:1fr}.form-panel{order:1}.results-panel{order:2;min-height:auto}.empty-state{min-height:240px}}
+@media(max-width:480px){.results-panel,.form-panel{padding:20px;border-radius:16px}.metric-grid{gap:0 12px}.metric strong{font-size:21px}.status-badge{font-size:10px;padding:7px 9px}}

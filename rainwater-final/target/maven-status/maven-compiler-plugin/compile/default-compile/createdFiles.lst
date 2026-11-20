@@ -1,0 +1,6 @@
+com\example\rainwater\RainwaterApplication.class
+com\example\rainwater\RoofType.class
+com\example\rainwater\CalculatorController$CalculationRequest.class
+com\example\rainwater\CalculatorController.class
+com\example\rainwater\CalculatorController$CalculationResult.class
+com\example\rainwater\RainwaterCalculator.class
